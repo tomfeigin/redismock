@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/redis/go-redis/v9"
 )
@@ -12,7 +12,7 @@ import (
 var _ = Describe("Commands", func() {
 	var (
 		clientMock baseMock
-		client     redis.Cmdable
+		client     mockCmdable
 		clientType redisClientType
 	)
 
